@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Recorder</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Test Recorder</h2>
+        
+        <div class="button-group">
+            <button id="start-recording">
+                <img src="icons/start_recording.png" alt="Start Recording" width="30">
+            </button>
+            
+            <button id="stop-recording">
+                <img src="icons/stop_recording.png" alt="Stop Recording" width="30">
+            </button>            
+        </div>
+
+        <p id="countdown"></p>
+
+        <div id="table-container" style="display: none;">
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Target</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recorded-steps"></tbody>
+                </table>
+            </div>
+        </div>
+        
+
+            <div class="export-buttons">
+                <button id="export-csv"><img src="icons/export.png" alt="Export CSV" width="24"> Export CSV</button>
+                <button id="export-json"><img src="icons/export.png" alt="Export JSON" width="24"> Export JSON</button>
+                <button id="export-robot"><img src="icons/export.png" alt="Export CSV" width="24"> Export Robot</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

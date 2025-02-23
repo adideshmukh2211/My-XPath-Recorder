@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 350px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#start-recording {
+    background-color: green;
+    color: white;
+}
+
+#stop-recording {
+    background-color: red;
+    color: white;
+}
+
+button img.icon {
+    width: 16px;
+    height: 16px;
+}
+
+#table-container {
+    width: 100%; /* Make sure the table takes full width */
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Adjusts column width automatically */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+/* Enable scrolling when needed */
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+}
